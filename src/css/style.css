@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,700;1,6..12,400;1,6..12,500&family=Poppins:wght@300;400;500;600;700;800&family=Red+Hat+Display:wght@500;700;900&family=Roboto:wght@400;500;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 0px 23px 0px;
+    border-bottom: 1px solid #D9DADC;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.login-social-media{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.facebook{
+    display: flex;
+    width: 450px;
+    padding: 2px 92px;
+    height: 48px;
+    align-items: center;
+    border-radius: 500px;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    background: #1877F2;
+    color: white;
+    border: none;
+    justify-content: center;
+    gap: 8px;
+}
+
+.apple{
+    display: flex;
+    width: 450px;
+    height: 48px;
+    padding: 2px 92px;
+    align-items: center;
+    border-radius: 500px;
+    border: 1px solid #878787;
+    background: rgba(0, 0, 0, 0.90);
+    color: white;
+    border: none;
+    justify-content: center;
+    gap: 8px;
+}
+
+.google{
+    display: flex;
+    width: 450px;
+    height: 48px;
+    padding: 2px 92px;
+    align-items: center;
+    border-radius: 500px;
+    border: 1px solid #878787;
+    justify-content: center;
+    gap: 8px;
+    color: #6A6A6A;
+}
+
+span{
+    width: 195.906px;
+    height: 2px;
+    border: 1px solid #D9DADC;
+}
+
+.or{
+    text-align: center;
+}
+
+.ord{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.inputs{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label{
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+input{
+    width: 450px;
+    height: 48px;
+    display: flex;
+    padding: 13px 14px;
+    align-items: flex-start;
+    border-radius: 4px;
+    background: #FFF;
+    border: none;
+    box-shadow: 0px 0px 0px 1px #878787 inset;
+}
+
+.passw{
+    margin-top: 12px;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+
+.loginbtn{
+    cursor: pointer;
+    margin-top: 12px;
+    display: flex;
+    width: 450px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 500px;
+    background: #1ED760;
+
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.498px;
+    text-transform: uppercase;
+    transition: all ease-in-out 0.3s;
+}
+
+.loginbtn:hover{
+    background-color: #1e8f46;
+}
+
+.divisa{
+    margin-top: 16px;
+    width: 450px;
+    height: 2px;
+    flex-shrink: 0;
+    border: 1px solid #D9DADC;
+}
+
+.don{
+    margin-top: 16px;
+    color: #000;
+    text-align: center;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.registerbtn{
+    cursor: pointer;
+    margin-top: 12px;
+    display: flex;
+    width: 450px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 500px;
+    background: #fefffe;
+    border: 1px solid #878787;
+    color: #6A6A6A;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.498px;
+    text-transform: uppercase;
+    transition: all ease-in-out 0.3s;
+}
+
+.registerbtn:hover{
+    background: #000000;
+    color: white;
+    border: none;
+}
+
+@media only screen and (max-width: 767px) {
+    header {
+        padding: 15px 0;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .login-social-media {
+        gap: 8px;
+    }
+
+    .facebook,
+    .apple,
+    .google {
+        margin: 0 auto;
+        width: 80%;
+        padding: 10px;
+    }
+
+    .inputs {
+        margin-top: 15px;
+    }
+
+    input {
+        width: 300px;
+    }
+
+    .pass{
+        width: 100%;
+    }
+    
+    .loginbtn,
+    .registerbtn {
+        width: 300px;
+    }
+
+    .divisa {
+        width: 100%;
+        margin-top: 12px;
+    }
+
+    .don {
+        margin-top: 12px;
+        font-size: 16px;
+    }
+}
